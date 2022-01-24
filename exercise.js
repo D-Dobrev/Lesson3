@@ -9,7 +9,11 @@ console.log(smallerBigger)
 /* EXERCISE 2
   Write a piece of code to check: if  given an integer is NOT equal to 5 then display " not equal"
 */
+let int3 = 8;
 
+if (int3 !== 5) {
+  console.log("Not equal");
+} else console.log("Equal");
 
 /* WRITE YOUR ANSWER HERE */
 console.log("EXERCISE 2")
@@ -210,11 +214,21 @@ for ( numbersFor = 0; numbersFor <= 10; numbersFor++) {
 Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displaying 3 and 8.
 */
 
+for (let i = 0; i < 10; i++) {
+    if (i !== 3 && i !== 5) {
+      console.log(i);
+    }
+  }
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 16
  Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen
 */
+for (let i = 0; i <= 15; i++) {
+    if (i % 2 === 0) {
+      console.log(i, "Even");
+    } else console.log(i, "Odd");
+  }
 
 /* WRITE YOUR ANSWER HERE */
 
@@ -223,6 +237,15 @@ Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displa
  */
 
 /* WRITE YOUR ANSWER HERE */
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else console.log(i);
+  }
 
 /* EXERCISE 18
   Write a piece of code to check the day of the week .  Usie  SWITCH - CASE  and given "day" variable with range from 1 to 7. 
